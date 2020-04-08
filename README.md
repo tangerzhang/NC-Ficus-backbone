@@ -1,7 +1,25 @@
 # NC-Ficus-backbone
 Codes for Ficus backbone review
 
-### Convert VCF to fasta
+### System requirment
+- **Dependencies: PERL verion 5**
+- **Operating system: CentOS 6.2**
+- **Software version: release-date-20201124**
+- **No non-stardand software required**
+
+### Installation guide
+- **Install command lines**
+```
+git clone https://github.com/tangerzhang/NC-Ficus-backbone.git
+chmod +x *.pl
+```
+- **Install time**
+```
+Time: 5 seconds
+```
+
+
+### convert VCF to fasta
 - **Parameter description**
 > This script was used to extract tandem SNPs and converted it into fasta format. Each sample will have a single sequence in fasta format.
 ```
@@ -21,7 +39,8 @@ perl vcf2fasta.pl
 ```
 perl ~/software/script/faSize.pl snp.demo.fasta 
 ```
-> After running the script, we will get a snp.demo.fasta file, containing 17 sequences with each having 881 SNPs. The parameter -m 0.4 will allow a mininum missing rate of 40% within each SNP site.
+> Running this script on demo data needs only 1 second.  
+After running the script, we will get a snp.demo.fasta file, containing 17 sequences with each having 881 SNPs. The parameter -m 0.4 will allow a mininum missing rate of 40% within each SNP site.
 
 ### Extract subset of samples from VCF
 - **Parameter description**
@@ -38,7 +57,8 @@ perl subVCF.pl
 ************************************************************************
 ```
 - **Demo data testing**
-> The parameter -s will allow us to provide a list of sample names of interest, which will be further extracted by the script subVCF.pl
+> Running this script on demo data requires only 1 second.   
+The parameter -s will allow us to provide a list of sample names of interest, which will be further extracted by the script subVCF.pl
 ```
 perl subVCF.pl -v demo.vcf -s sample.list -o subset.vcf
 ```
@@ -49,6 +69,4 @@ FmiFmU
 FadWG105P
 ```
 > After running the script 'subVCF.pl', we wil get a subset of VCF, containg only the listed 3 samples.
-
-
 
