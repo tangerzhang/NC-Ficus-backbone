@@ -1,5 +1,7 @@
 # NC-Ficus-backbone
-Codes for Ficus backbone review
+Codes for Ficus backbone review  
+
+[![DOI](https://zenodo.org/badge/253971825.svg)](https://zenodo.org/badge/latestdoi/253971825)  
 
 ### System requirment
 - **Dependencies: PERL verion 5**
